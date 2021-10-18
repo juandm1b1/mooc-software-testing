@@ -13,8 +13,8 @@ public class CountLetters {
 
             last = str.charAt(i);
         }
-
-        if(last == 'x' || last == 's')
+// Se corrige bug last == 'x' por last == 'r', para alcanzar el 100% de condition coverage
+        if(last == 'r' || last == 's')
             words++;
 
         return words;
